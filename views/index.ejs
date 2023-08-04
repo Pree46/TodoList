@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+    <div class="heading">
+        <h1>TodoList</h1>
+    </div>
+    <div class="content">
+        <% for(let i=0; i<locals.N; i++) {%>
+            <li>
+                <div class="item">
+                    <input class="chkbox" type="checkbox">
+                        <p>
+                            <%= locals.newItems[i] %>
+                        </p>
+                </div>
+            </li>
+        <% } %>
+        <form action="/" method="post">
+            <input type="text" placeholder="Add New Item here" name="newItem">
+            <button type="submit" name="list">+</button>
+        </form>
+    </div> 
+</main>
+</body>
+</html>

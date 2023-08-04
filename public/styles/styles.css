@@ -1,0 +1,118 @@
+
+html{
+    min-height: 1000px;
+    font-family: "helvetica neue";
+}
+
+
+    
+body{
+    display: flex;
+   flex-direction: column;
+   justify-content: stretch;
+   min-height: 95vh;
+   background: linear-gradient(1000deg, #97FEED ,#35A29F, #071952);
+    background-size: 180% 180%;
+    animation: gradient-animation 10s ease infinite; 
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }}
+}
+div{
+    display: block;
+}
+main{
+    text-align: center;
+    flex: 1 0 auto;
+
+}
+.heading{
+    background-color: #35A29F;
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+    max-width: 400px;
+    margin: 50px auto;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+}
+h1{
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+li{
+    list-style-type: none;
+}
+input[type="checkbox"] {
+    margin: 20px;
+  }
+.content{
+    background-color: white;
+    border-radius: 5px;
+    margin: 50px auto;
+    width: 600px;
+    box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+    margin-bottom: 20px;
+}
+.item{
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #f1f1f1;
+    
+}
+.chkbox:checked + p{
+    text-decoration: line-through;
+    text-decoration-color: #35A29F;
+  }
+  p{
+    font-size: 20px;
+    padding: 20px;
+  }
+form{
+    text-align: center;
+    margin-left: 20px;
+}
+button{
+    min-height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border-color: transparent;
+  background-color: #35A29F;
+  color: #fff;
+  margin-top: 10px;
+  font-size: 30px;
+
+  border-width: 0;
+}
+input[type=text] {
+    text-align: center;
+    height: 60px;
+    top: 10px;
+    background: transparent;
+    border: none;
+    font-size: 20px;
+    font-weight: 200;
+    margin-bottom: 10px;
+    width: 313px;
+}
+input[type="text"]:focus {
+    outline: none;
+    box-shadow: inset 0 -3px 0 0 #35A29F;
+  }
+::placeholder{
+    opacity: 0.75;
+}
+  
